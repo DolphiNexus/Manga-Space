@@ -1,3 +1,93 @@
 page-home {
+  .background {
+    background-color: lightgray;
+  }
 
+  .scroll-control {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  ion-card.card {
+    box-shadow: none;
+    background: rgba(0, 8, 8, 0.5);
+    border-radius: 5px;
+  }
+
+  a, p,
+  ion-card-header.card-header {
+    color: #fff!important;
+  }
 }
+
+.list > .item-block:first-child {
+  border: medium none;
+}
+
+.list > .item-block .item-inner{
+  border: medium none;
+}
+
+.item{
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: medium none;
+}
+
+.text-input, {
+  color: #fff;
+}
+
+input::-moz-placeholder, {
+  color: #fff!important;
+}
+
+input:-eoz-placeholder {
+  color: #fff!important;
+}
+
+*::-webkit-input-placeholder, {
+  color: #fff!important;
+}
+
+*:-es-input-placeholder, {
+  color: #fff!important;
+}
+
+*:-moz-placeholder, {
+  color: #fff!important;
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+.botton {
+  position: absolute;
+  botton: 8;
+}
+
+.action-sheets-basic-page {
+  .ion-md-share {
+    color: #ED4248;
+  }
+
+  .ion-md-arrow-dropright-circle {
+    color: #508AE4;
+  }
+
+  .ion-md-heart-outline {
+    color: #31D55F;
+  }
+  
+  .action-sheet-cancel ion-icon,
+  .action-sheet-destructive ion-icon {
+    color: #757575;
+  }
+}
+
+
+

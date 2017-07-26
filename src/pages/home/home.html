@@ -1,17 +1,27 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="background">
+<img src="../assets/Logo.png" alt="DNEX"  align="middle">
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+    <ion-card-header>
+      Login
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          <ion-input input="text" placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <a>Forgot your info? <b>Get help signing in</b></a>
+      <br>
+      <button block outline color="light" (click)='goToAvailable()'>Log In</button>
+      <p>OR</p>
+      <button block color="facebook">
+        <ion-icon name="logo-facebook"></ion-icon> Login with Facebook
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <button class="botton" clear full color="light">Don't have an account? Sign up here</button>
 </ion-content>

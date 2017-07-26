@@ -1,0 +1,50 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<ion-tabs>
+    <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
+
+<ion-header>
+<ion-navbar color="header">
+<ion-title>
+<h2 style="text-align: center;">Dragon Ball Z</h2>
+</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content class="everything">
+<ion-list>
+<ion-item *ngFor="let item of list | async">
+	{{item.name}}
+</ion-item>
+	
+</ion-list>
+
+
+
+<img src="assets/DBZ8.jpg" alt="Manga Cover Pic"  align="middle">
+
+<hr>
+
+<textarea cols="38" rows="8" placeholder="Description of the book...">
+</textarea>
+
+<hr>
+<hr>
+
+<textarea cols="38" rows="2" placeholder="Description of the book...">
+</textarea>
+  
+<div class="textarea">
+  <textarea cols="38" rows="5" placeholder="Description of the book..."></textarea>
+</div>
+
+<hr>
+
+<div class="rent">
+<button ion-button round outline class="button">Rent</button>
+</div>
+</ion-content>
+

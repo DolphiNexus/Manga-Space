@@ -1,3 +1,138 @@
 page-about {
-
+    background-color:  #1A679D; 
 }
+.everything{
+    background-color:  #1A679D;
+}
+.row{
+    background-color:  #1A679D;
+}
+.card{
+    background-color: #1A679D;
+}
+element.style {
+    margin-top: 79px;
+    margin-bottom: 56px;
+    background-color: #1A679D;
+}
+
+h3 {
+    margin-left: 90px;
+}
+
+
+
+h1 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    background-color: #1A679D;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 3px;
+    content: '\a0';
+    background-color: #444242;
+}
+h1:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+h1:after {
+    margin-left: 3%;
+    text-align: right;
+}
+
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.headershadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.color {
+    background-color: #ccc;
+}
+
+div.scroll-content {
+element.style {
+    background-color: #1A679D;
+	}
+}
+.card-md h1{
+    color: white;
+}
+
+.round {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    border: 1px transparent solid;
+    padding: 5px 5px 5px 15px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    background-color: #1180C9;
+    color: white;
+}
+
+.corner {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #000;
+    background-image: url("assets/Search Icon.png");
+     /* Set the bg image here. with "no-repeat" */
+}
+
+.search {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    width: 250px;
+    height: 40px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+
+

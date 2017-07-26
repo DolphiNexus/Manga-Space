@@ -14,3 +14,26 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.ion-customicon,
+.ion-md-customicon {
+  content: url(../assets/Books.png);
+  width: 50px;
+  height: 32px;
+  padding: 6px 8px 2px;
+  opacity: 0.9;
+}
+
+.ion-customicon,
+.ion-md-customicon2 {
+  content: url(../assets/Home.png);
+  width: 40px;
+  height: 32px;
+  padding: 6px 8px 2px;
+  opacity: 0.9;
+}
+
+
+
+
+

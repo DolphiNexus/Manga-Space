@@ -3,17 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { ThankYouPage } from '../pages/thank-you/thank-you';
+import { YourLibraryPage } from '../pages/your-library/your-library';
+import { RentPage } from '../pages/rent/rent';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ActionSheetController } from 'ionic-angular';
+import { AppSettingsProvider } from '../providers/app-settings/app-settings';
+import { DataServiceProvider } from '../providers/data-service/data-service';
+import { HttpModule } from "@angular/http"
+
+
 
 @NgModule({
   declarations: [
     MyApp,
+    ThankYouPage,
+    YourLibraryPage,
+    RentPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -21,11 +34,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpModule,
+    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{tabsPlacement: 'top'}),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    ThankYouPage,
+    YourLibraryPage,
+    RentPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -34,7 +52,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    ActionSheetController,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AppSettingsProvider,
+    DataServiceProvider,
   ]
 })
+
 export class AppModule {}
+

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8101/ -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- Ionic Dev Server: Injected Logger Script -->
+  <script>var IonicDevServerConfig={"sendConsoleLogs":false,"wsPort":53704,"appScriptsVersion":"2.0.2","systemInfo":["Ionic Framework: 3.5.3","Ionic App Scripts: 2.0.2","Angular Core: 4.1.3","Angular Compiler CLI: 4.1.3","Node: 6.9.5","OS Platform: Windows 10"]};</script>
+  <link href="./Naruto_Volume 1_files/ion-dev.css" rel="stylesheet">
+  <script src="./Naruto_Volume 1_files/ion-dev.js.download"></script>
+  
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.5.3';i.angular='4.1.3';i.staticDir='build/';})(window);
+  </script>
+  
+  <title>
+Naruto:Volume 1
+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  
+  <link rel="manifest" href="http://localhost:8101/manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- cordova.js required for cordova apps -->
+  <script src="./Naruto_Volume 1_files/cordova.js.download"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="./Naruto_Volume 1_files/main.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="data:image/png;base64,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"></head>
+<body>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app class="app-root app-root-md md platform-mobile platform-android platform-android6 platform-android6_0 platform-mobileweb" ng-version="4.1.3"><div app-viewport=""></div><ng-component class="app-root"><ion-menu role="navigation" side="left" type="overlay" class="menu-enabled" ng-reflect-content="[object Object]" ng-reflect-side="left"><div class="menu-inner">
+	<ion-header class="header header-md">
+		<ion-toolbar class="toolbar toolbar-md"><div class="toolbar-background toolbar-background-md" ng-reflect-klass="toolbar-background" ng-reflect-ng-class="toolbar-background-md"></div><div class="toolbar-content toolbar-content-md" ng-reflect-klass="toolbar-content" ng-reflect-ng-class="toolbar-content-md">
+			<ion-title class="title title-md"><div class="toolbar-title toolbar-title-md" ng-reflect-klass="toolbar-title" ng-reflect-ng-class="toolbar-title-md">Menu</div></ion-title>
+		</div></ion-toolbar>
+	</ion-header>
+
+	<ion-content class="content content-md"><div class="fixed-content"></div><div class="scroll-content">
+		<ion-list class="list list-md">
+			<h2>Settings</h2>
+			<h2>My Account</h2>
+			<h2>Help</h2>
+		</ion-list>
+	</div></ion-content>
+</div><ion-backdrop disable-activated="" role="presentation" tappable=""></ion-backdrop></ion-menu>
+
+<ion-nav class="menu-content menu-content-overlay" ng-reflect-root="function TabsPage() {
+       "><div nav-viewport=""></div><ng-component class="ion-page show-page" style="z-index: 100;"><ion-tabs color="header" class="tabs tabs-md tabs-md-header" ng-reflect-color="header" tabsplacement="bottom" tabslayout="icon-top" tabshighlight="false"><div class="tabbar show-tabbar" role="tablist" style="bottom: 0px;"><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--><a class="tab-button has-title has-icon disable-hover" href="http://localhost:8101/#" role="tab" ng-reflect-tab="[object Object]" id="tab-t0-0" aria-controls="tabpanel-t0-0" aria-selected="true"><!--bindings={
+  "ng-reflect-ng-if": "home"
+}--><ion-icon class="tab-button-icon icon icon-md ion-md-home" role="img" aria-label="home" ng-reflect-name="home" ng-reflect-is-active="true"></ion-icon><!--bindings={
+  "ng-reflect-ng-if": "Home"
+}--><span class="tab-button-text">Home</span><!--bindings={}--><div class="button-effect"></div></a><a class="tab-button has-title has-icon disable-hover" href="http://localhost:8101/#" role="tab" ng-reflect-tab="[object Object]" id="tab-t0-1" aria-controls="tabpanel-t0-1" aria-selected="false"><!--bindings={
+  "ng-reflect-ng-if": "contacts"
+}--><ion-icon class="tab-button-icon icon icon-md ion-md-contacts" role="img" aria-label="contacts" ng-reflect-name="contacts" ng-reflect-is-active="false"></ion-icon><!--bindings={
+  "ng-reflect-ng-if": "Library"
+}--><span class="tab-button-text">Library</span><!--bindings={}--><div class="button-effect"></div></a><div class="tab-highlight"></div></div>
+  <ion-tab role="tabpanel" tabicon="home" tabtitle="Home" ng-reflect-root="function HomePage(navCtrl) {
+" ng-reflect-tab-title="Home" ng-reflect-tab-icon="home" id="tabpanel-t0-0" aria-labelledby="tab-t0-0" class="show-tab" aria-hidden="false"><div></div><page-home class="ion-page show-page" style="z-index: 100;" hidden=""><ion-content class="background content content-md"><div class="fixed-content" style="margin-bottom: 56px;"></div><div class="scroll-content" style="margin-bottom: 56px;">
+<img align="middle" alt="DNEX" src="./Naruto_Volume 1_files/Logo.png">
+
+  <ion-card class="card card-md">
+    <ion-card-header class="card-header card-header-md">
+      Login
+    </ion-card-header>
+    <ion-card-content class="card-content card-content-md">
+      <ion-list no-line="" class="list list-md">
+        <ion-item class="item item-block item-md item-input"><div class="item-inner"><div class="input-wrapper"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><ion-input input="text" placeholder="Username" class="input input-md" ng-reflect-placeholder="Username"><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><input class="text-input text-input-md" ng-reflect-klass="text-input" ng-reflect-ng-class="text-input-md" type="text" aria-labelledby="lbl-0" autocomplete="off" autocorrect="off" placeholder="Username" input="text" ng-reflect-placeholder="Username"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><div class="input-cover"></div></ion-input></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><div class="button-effect"></div></ion-item>
+        <ion-item class="item item-block item-md item-input"><div class="item-inner"><div class="input-wrapper"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><ion-input placeholder="Password" type="password" class="input input-md" ng-reflect-type="password" ng-reflect-placeholder="Password"><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><input class="text-input text-input-md" ng-reflect-klass="text-input" ng-reflect-ng-class="text-input-md" type="password" aria-labelledby="lbl-1" autocomplete="off" autocorrect="off" placeholder="Password" ng-reflect-type="password" ng-reflect-placeholder="Password"><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><div class="input-cover"></div></ion-input></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><div class="button-effect"></div></ion-item>
+      </ion-list>
+      <a>Forgot your info? <b>Get help signing in</b></a>
+      <button block="" color="light" ion-button="" outline="" class="disable-hover button button-md button-outline button-outline-md button-block button-block-md button-outline-md-light" ng-reflect-color="light" ng-reflect-outline="" ng-reflect-block=""><span class="button-inner">Log In</span><div class="button-effect" style="transform: translate3d(-24px, -31px, 0px) scale(1); height: 135px; width: 135px; opacity: 0; transition: transform 316ms, opacity 221ms 95ms;"></div></button>
+      <p>OR</p>
+      <button block="" color="facebook" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md button-md-facebook" ng-reflect-color="facebook" ng-reflect-block=""><span class="button-inner">
+        <ion-icon name="logo-facebook" role="img" class="icon icon-md ion-logo-facebook" aria-label="logo facebook" ng-reflect-name="logo-facebook"></ion-icon> Login with Facebook
+      </span><div class="button-effect"></div></button>
+    </ion-card-content>
+  </ion-card>
+  <button class="botton disable-hover button button-md button-clear button-clear-md button-full button-full-md button-clear-md-light" clear="" color="light" full="" ion-button="" ng-reflect-color="light" ng-reflect-clear="" ng-reflect-full=""><span class="button-inner">Don't have an account? Sign up here</span><div class="button-effect"></div></button>
+</div></ion-content>
+</page-home><page-about class="ion-page show-page" style="z-index: 101;" hidden=""><ion-header class="header header-md">
+<ion-toolbar class="toolbar toolbar-md toolbar-md-header" color="header" ng-reflect-color="header"><div class="toolbar-background toolbar-background-md" ng-reflect-klass="toolbar-background" ng-reflect-ng-class="toolbar-background-md"></div><div class="toolbar-content toolbar-content-md" ng-reflect-klass="toolbar-content" ng-reflect-ng-class="toolbar-content-md">
+  <ion-title class="title title-md"><div class="toolbar-title toolbar-title-md" ng-reflect-klass="toolbar-title" ng-reflect-ng-class="toolbar-title-md">
+    <div class="row">
+    <div class="col">
+        <div class="text-center">
+            <h2 style="text-align: center;">Product Name</h2>
+        </div>
+    </div>
+</div>
+  </div></ion-title>
+</div></ion-toolbar>
+</ion-header>
+
+
+<ion-content class="everything content content-md"><div class="fixed-content" style="margin-top: 74px; margin-bottom: 56px;"></div><div class="scroll-content" style="margin-top: 74px; margin-bottom: 56px;">
+  <ion-searchbar class="searchbar searchbar-md searchbar-left-aligned"><div class="searchbar-input-container"><button class="searchbar-md-cancel disable-hover button button-md button-clear button-clear-md button-clear-md-dark" clear="" color="dark" ion-button="" mode="md" type="button" ng-reflect-color="dark" ng-reflect-mode="md" ng-reflect-clear=""><span class="button-inner"><ion-icon name="md-arrow-back" role="img" class="icon icon-md ion-md-arrow-back" aria-label="arrow back" ng-reflect-name="md-arrow-back"></ion-icon></span><div class="button-effect"></div></button><div class="searchbar-search-icon"></div><input class="searchbar-input" placeholder="Search" type="search" autocomplete="off" autocorrect="off" spellcheck="false"><button class="searchbar-clear-icon disable-hover button button-md button-clear button-clear-md" clear="" ion-button="" type="button" ng-reflect-mode="md" ng-reflect-clear=""><span class="button-inner"></span><div class="button-effect"></div></button></div><button class="searchbar-ios-cancel disable-hover button button-ios button-clear button-clear-ios" clear="" ion-button="" mode="ios" type="button" ng-reflect-mode="ios" ng-reflect-clear="" tabindex="-1"><span class="button-inner">Cancel</span><div class="button-effect"></div></button></ion-searchbar>
+  <ion-list class="list list-md">
+
+<ion-scroll scrolly="true" style="height:530px" ng-reflect-scroll-y="true" class="scroll-y"><div class="scroll-content"><div class="scroll-zoom-wrapper">
+
+<hr>
+
+    <ion-card class="card card-md">
+
+<ion-scroll scrolly="true" style="height:530px" ng-reflect-scroll-y="true" class="scroll-y"><div class="scroll-content"><div class="scroll-zoom-wrapper">
+
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Available</h1>
+    </div>
+</div>
+
+    <ion-card class="card card-md card-md-card" color="card" ng-reflect-color="card">
+    <div id="container">
+    <img class="contents" src="./Naruto_Volume 1_files/DBZ7.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/DBZ7.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/DBZ7.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/DBZ7.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/DBZ7.jpg">
+  </div>
+
+  <ion-card-content class="card-content card-content-md">
+    <ion-card-title class="card-title card-title-md">
+      Dragon Ball Z
+      </ion-card-title>
+    <p>
+      Available Copies from the series
+    </p> 
+  </ion-card-content>
+</ion-card>
+
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Request</h1>
+    </div>
+</div>
+
+    <ion-card color="card" class="card card-md card-md-card" ng-reflect-color="card">
+
+    <div id="container">
+    <img class="contents" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+    <img class="contents" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+  </div>
+
+  <ion-card-content class="card-content card-content-md">
+    <ion-card-title class="card-title card-title-md">
+      Naruto
+      </ion-card-title>
+    <p>
+      Available Copies from the series
+    </p> 
+  </ion-card-content>
+  </ion-card>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div></div></div></div></ion-scroll></ion-card></div></div></ion-scroll></ion-list></div></ion-content></page-about><page-contact class="ion-page show-page" style="z-index: 102;"><ion-tabs class="tabs tabs-md" tabsplacement="bottom" tabslayout="icon-top" tabshighlight="false"><div class="tabbar" role="tablist"><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object]"
+}--><a class="tab-button has-title has-icon disable-hover" href="http://localhost:8101/#" role="tab" ng-reflect-tab="[object Object]" id="tab-t2-0" aria-controls="tabpanel-t2-0"><!--bindings={
+  "ng-reflect-ng-if": "information-circle"
+}--><ion-icon class="tab-button-icon icon icon-md ion-md-information-circle" role="img" aria-label="information circle" ng-reflect-name="information-circle"></ion-icon><!--bindings={
+  "ng-reflect-ng-if": "Rent a book"
+}--><span class="tab-button-text">Rent a book</span><!--bindings={}--><div class="button-effect"></div></a><div class="tab-highlight"></div></div>
+    <ion-tab role="tabpanel" tabicon="information-circle" tabtitle="Rent a book" ng-reflect-tab-title="Rent a book" ng-reflect-tab-icon="information-circle" id="tabpanel-t2-0" aria-labelledby="tab-t2-0"><div></div><div class="nav-decor"></div></ion-tab>
+<div tab-portal=""></div></ion-tabs>
+<ion-header class="header header-md">
+<ion-navbar class="toolbar toolbar-md toolbar-md-header" color="header" ng-reflect-color="header"><div class="toolbar-background toolbar-background-md" ng-reflect-klass="toolbar-background" ng-reflect-ng-class="toolbar-background-md"></div><button class="back-button disable-hover bar-button bar-button-md back-button-md bar-button-default bar-button-default-md show-back-button" ion-button="bar-button" ng-reflect-klass="back-button" ng-reflect-ng-class="back-button-md"><span class="button-inner"><ion-icon class="back-button-icon icon icon-md back-button-icon-md ion-md-arrow-back" role="img" ng-reflect-klass="back-button-icon" ng-reflect-ng-class="back-button-icon-md" aria-label="arrow back" ng-reflect-name="md-arrow-back"></ion-icon><span class="back-button-text back-button-text-md" ng-reflect-klass="back-button-text" ng-reflect-ng-class="back-button-text-md"></span></span><div class="button-effect"></div></button><div class="toolbar-content toolbar-content-md" ng-reflect-klass="toolbar-content" ng-reflect-ng-class="toolbar-content-md">
+<ion-title class="title title-md"><div class="toolbar-title toolbar-title-md" ng-reflect-klass="toolbar-title" ng-reflect-ng-class="toolbar-title-md">
+<h2 style="text-align: center;">Naruto:Volume 1</h2>
+</div></ion-title>
+</div></ion-navbar>
+</ion-header>
+
+<ion-content class="everything content content-md"><div class="fixed-content" style="margin-top: 64px; margin-bottom: 56px;"></div><div class="scroll-content" style="margin-top: 64px; margin-bottom: 56px;">
+<img align="middle" alt="Manga Cover Pic" src="./Naruto_Volume 1_files/NarutoManga.jpg">
+
+<hr>
+
+<textarea cols="42" placeholder="Condition..." rows="1"></textarea>
+
+<hr>
+
+<textarea cols="42" placeholder="Phone..." rows="1"></textarea>
+
+<hr>
+  
+<div class="textarea">
+  <textarea cols="42" placeholder="E-mail..." rows="1"></textarea>
+</div>
+
+<hr>
+
+<textarea cols="42" placeholder="Additional Notes..." rows="5"></textarea>
+
+<hr>
+
+<div class="rent">
+<button class="button disable-hover button-md button-outline button-outline-md button-round button-round-md" ion-button="" outline="" round="" ng-reflect-outline="" ng-reflect-round=""><span class="button-inner">Submit</span><div class="button-effect"></div></button>
+</div>
+</div></ion-content>
+</page-contact><div class="nav-decor"></div></ion-tab>
+  <ion-tab role="tabpanel" tabicon="contacts" tabtitle="Library" ng-reflect-root="function YourLibraryPage(navCt" ng-reflect-tab-title="Library" ng-reflect-tab-icon="contacts" id="tabpanel-t0-1" aria-labelledby="tab-t0-1" aria-hidden="true"><div></div><div class="nav-decor"></div></ion-tab>
+<div tab-portal=""></div></ion-tabs>
+
+</ng-component><div class="nav-decor"></div></ion-nav>
+
+</ng-component><div overlay-portal="" ng-reflect-_overlay-portal=""></div><div overlay-portal="" ng-reflect-_overlay-portal=""></div><div class="loading-portal" overlay-portal="" ng-reflect-_overlay-portal=""></div><div class="toast-portal" ng-reflect-_overlay-portal="10000"></div><div class="click-block click-block-enabled"></div></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="./Naruto_Volume 1_files/polyfills.js.download"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="./Naruto_Volume 1_files/vendor.js.download"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="./Naruto_Volume 1_files/main.js.download"></script>
+
+  <!-- Ionic Dev Server: Injected LiveReload Script -->
+  <script src="./Naruto_Volume 1_files/livereload.js.download" async="" defer=""></script>
+
+
+</body></html>

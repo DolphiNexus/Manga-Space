@@ -1,0 +1,494 @@
+webpackJsonp([0],{
+
+/***/ 107:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 107;
+
+/***/ }),
+
+/***/ 148:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 148;
+
+/***/ }),
+
+/***/ 192:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* unused harmony export BackgroundPage */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contact_contact__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__your_library_your_library__ = __webpack_require__(196);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_1__contact_contact__["a" /* ContactPage */];
+        this.tab5Root = __WEBPACK_IMPORTED_MODULE_3__your_library_your_library__["a" /* YourLibraryPage */];
+    }
+    return TabsPage;
+}());
+TabsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\tabs\tabs.html"*/'<ion-tabs  color="header">\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab5Root" tabTitle="Library" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\tabs\tabs.html"*/
+    }),
+    __metadata("design:paramtypes", [])
+], TabsPage);
+
+var BackgroundPage = (function () {
+    function BackgroundPage() {
+    }
+    return BackgroundPage;
+}());
+BackgroundPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        templateUrl: 'template.html'
+    })
+], BackgroundPage);
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 193:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* unused harmony export BasicPage */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(194);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.goToAvailable = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */]);
+    };
+    return HomePage;
+}());
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\home\home.html"*/'<ion-content class="background">\n<img src="../assets/Logo.png" alt="DNEX"  align="middle">\n\n  <ion-card>\n    <ion-card-header>\n      Login\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list no-line>\n        <ion-item>\n          <ion-input input="text" placeholder="Username"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-input type="password" placeholder="Password"></ion-input>\n        </ion-item>\n      </ion-list>\n      <a>Forgot your info? <b>Get help signing in</b></a>\n      <button ion-button block outline color="light" (click)=\'goToAvailable()\'>Log In</button>\n      <p>OR</p>\n      <button ion-button block color="facebook">\n        <ion-icon name="logo-facebook"></ion-icon> Login with Facebook\n      </button>\n    </ion-card-content>\n  </ion-card>\n  <button class="botton" ion-button clear full color="light">Don\'t have an account? Sign up here</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\home\home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], HomePage);
+
+
+var BasicPage = (function () {
+    function BasicPage(platform, actionsheetCtrl) {
+        this.platform = platform;
+        this.actionsheetCtrl = actionsheetCtrl;
+    }
+    BasicPage.prototype.openMenu = function () {
+        var actionSheet = this.actionsheetCtrl.create({
+            title: 'Albums',
+            cssClass: 'action-sheets-basic-page',
+            buttons: [
+                {
+                    text: 'Delete',
+                    role: 'destructive',
+                    icon: !this.platform.is('ios') ? 'trash' : null,
+                    handler: function () {
+                        console.log('Delete clicked');
+                    }
+                },
+                {
+                    text: 'Share',
+                    icon: !this.platform.is('ios') ? 'share' : null,
+                    handler: function () {
+                        console.log('Share clicked');
+                    }
+                },
+                {
+                    text: 'Play',
+                    icon: !this.platform.is('ios') ? 'arrow-dropright-circle' : null,
+                    handler: function () {
+                        console.log('Play clicked');
+                    }
+                },
+                {
+                    text: 'Favorite',
+                    icon: !this.platform.is('ios') ? 'heart-outline' : null,
+                    handler: function () {
+                        console.log('Favorite clicked');
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    icon: !this.platform.is('ios') ? 'close' : null,
+                    handler: function () {
+                        console.log('Cancel clicked');
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    return BasicPage;
+}());
+BasicPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        templateUrl: 'basic.html'
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */]])
+], BasicPage);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 194:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rent_rent__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact__ = __webpack_require__(98);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AboutPage = (function () {
+    function AboutPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    AboutPage.prototype.goToRent = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__rent_rent__["a" /* RentPage */]);
+    };
+    AboutPage.prototype.goToContact = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__contact_contact__["a" /* ContactPage */]);
+    };
+    return AboutPage;
+}());
+AboutPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\about\about.html"*/'<ion-header>\n<ion-toolbar color="header">\n  <ion-title>\n    <div class="row">\n    <div class="col">\n        <div class="text-center">\n            <h2 style="text-align: center;">Product Name</h2>\n        </div>\n    </div>\n</div>\n  </ion-title>\n</ion-toolbar>\n</ion-header>\n\n\n<ion-content class="everything">\n  <ion-searchbar></ion-searchbar>\n  <ion-list>\n\n<ion-scroll scrollY="true" style="height:530px">\n\n<hr>\n\n    <ion-card>\n\n<ion-scroll scrollY="true" style="height:530px">\n\n<div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>Available</h1>\n    </div>\n</div>\n\n    <ion-card color="card" class="card">\n    <div id="container">\n    <img class="contents" (click)=\'goToRent()\' src="assets/DBZ7.jpg" />\n    <img class="contents" (click)=\'goToRent()\' src="assets/DBZ7.jpg" />\n    <img class="contents" (click)=\'goToRent()\' src="assets/DBZ7.jpg" />\n    <img class="contents" (click)=\'goToRent()\' src="assets/DBZ7.jpg" />\n    <img class="contents" (click)=\'goToRent()\' src="assets/DBZ7.jpg" />\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Dragon Ball Z\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n</ion-card>\n\n<div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>Request</h1>\n    </div>\n</div>\n\n    <ion-card  color="card">\n\n    <div id="container">\n    <img class="contents" (click)=\'goToContact()\' src="assets/NarutoManga.jpg"/>\n    <img class="contents" (click)=\'goToContact()\' src="assets/NarutoManga.jpg"/>\n    <img class="contents" (click)=\'goToContact()\' src="assets/NarutoManga.jpg"/>\n    <img class="contents" (click)=\'goToContact()\' src="assets/NarutoManga.jpg"/>\n    <img class="contents" (click)=\'goToContact()\' src="assets/NarutoManga.jpg"/>\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Naruto\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n  </ion-card>\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n  '/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\about\about.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], AboutPage);
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RentPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the RentPage tabs.
+ *
+ * See https://angular.io/docs/ts/latest/guide/dependency-injection.html for
+ * more info on providers and Angular DI.
+ */
+var RentPage = (function () {
+    function RentPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return RentPage;
+}());
+RentPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-rent',template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\rent\rent.html"*/'<ion-tabs>\n    <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>\n</ion-tabs>\n<ion-header>\n<ion-navbar color="header">\n<ion-title>\nDragon Ball Z</ion-title>\n</ion-navbar>\n</ion-header>\n<ion-content class="everything">\n<img src="assets/DBZ7.jpg" alt="Manga Cover Pic"  align="middle">\n\n<hr>\n\n<textarea cols="42" rows="8" placeholder="Description of the book...">\n</textarea>\n\n<hr>\n<hr>\n\n<textarea cols="42" rows="2" placeholder="Description of the book...">\n</textarea>\n  \n<div class="textarea">\n  <textarea cols="42" rows="5" placeholder="Description of the book..."></textarea>\n</div>\n\n<hr>\n\n<div class="rent">\n<button ion-button round outline class="button">Rent!</button>\n</div>\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\rent\rent.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], RentPage);
+
+//# sourceMappingURL=rent.js.map
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YourLibraryPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the YourLibraryPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var YourLibraryPage = (function () {
+    function YourLibraryPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    YourLibraryPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad YourLibraryPage');
+    };
+    return YourLibraryPage;
+}());
+YourLibraryPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-your-library',template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\your-library\your-library.html"*/'<ion-header>\n<ion-toolbar color="header">\n  <ion-title>\n    <div class="row">\n    <div class="col">\n        <div class="text-center">\n            <h2 style="text-align: center;">Product Name</h2>\n        </div>\n    </div>\n</div>\n  </ion-title>\n</ion-toolbar>\n</ion-header>\n\n\n<ion-content class="everything">\n  <ion-searchbar></ion-searchbar>\n  <ion-list>\n\n<ion-scroll scrollY="true" style="height:530px">\n\n<hr>\n\n    <ion-card>\n\n<ion-scroll scrollY="true" style="height:530px">\n\n<div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>Your Library</h1>\n    </div>\n</div>\n\n    <ion-card color="card" class="card">\n    <div id="container">\n    <img class="contents" src="assets/DBZ7.jpg" />\n    <img class="contents" src="assets/DBZ7.jpg" />\n    <img class="contents" src="assets/DBZ7.jpg" />\n    <img class="contents" src="assets/DBZ7.jpg" />\n    <img class="contents" src="assets/DBZ7.jpg" />\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Dragon Ball Z\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n</ion-card>\n\n<div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>Your Rents</h1>\n    </div>\n</div>\n\n    <ion-card  color="card">\n\n    <div id="container">\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Naruto\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n  </ion-card>\n\n  <div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>On Your Way</h1>\n    </div>\n</div>\n\n    <ion-card  color="card">\n\n    <div id="container">\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Naruto\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n  </ion-card>\n\n  <div class="row">\n    <div class="col">\n        <div class="text-center"> \n            <h1>Your Loans</h1>\n    </div>\n</div>\n\n    <ion-card  color="card">\n\n    <div id="container">\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n    <img class="contents" src="assets/NarutoManga.jpg"/>\n  </div>\n\n  <ion-card-content>\n    <ion-card-title>\n      Naruto\n      </ion-card-title>\n    <p>\n      Available Copies from the series\n    </p> \n  </ion-card-content>\n  </ion-card>\n\n\n  '/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\your-library\your-library.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], YourLibraryPage);
+
+//# sourceMappingURL=your-library.js.map
+
+/***/ }),
+
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(216);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 216:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_your_library_your_library__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_rent_rent__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__ = __webpack_require__(191);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_4__pages_your_library_your_library__["a" /* YourLibraryPage */],
+            __WEBPACK_IMPORTED_MODULE_5__pages_rent_rent__["a" /* RentPage */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_about_about__["a" /* AboutPage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__["a" /* ContactPage */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__["a" /* TabsPage */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */])
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_4__pages_your_library_your_library__["a" /* YourLibraryPage */],
+            __WEBPACK_IMPORTED_MODULE_5__pages_rent_rent__["a" /* RentPage */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_about_about__["a" /* AboutPage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__["a" /* ContactPage */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__["a" /* TabsPage */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* ActionSheetController */],
+            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
+        ]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 257:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(192);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    return MyApp;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
+], MyApp.prototype, "nav", void 0);
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\app\app.html"*/'<ion-menu side="left" [content]="content">\n	<ion-header>\n		<ion-toolbar>\n			<ion-title>Menu</ion-title>\n		</ion-toolbar>\n	</ion-header>\n\n	<ion-content>\n		<ion-list>\n			<h2>Settings</h2>\n			<h2>My Account</h2>\n			<h2>Help</h2>\n		</ion-list>\n	</ion-content>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content></ion-nav>\n\n'/*ion-inline-end:"C:\Users\jairo\TestApp\src\app\app.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 98:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return ContactPage;
+}());
+ContactPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-contact',template:/*ion-inline-start:"C:\Users\jairo\TestApp\src\pages\contact\contact.html"*/'<ion-tabs>\n    <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>\n</ion-tabs>\n<ion-header>\n<ion-navbar color="header">\n<ion-title>\n<h2 style="text-align: center;">Naruto:Volume 1</h2>\n</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="everything">\n<img src="assets/NarutoManga.jpg" alt="Manga Cover Pic"  align="middle">\n\n<hr>\n\n<textarea cols="42" rows="1" placeholder="Condition...">\n</textarea>\n\n<hr>\n\n<textarea cols="42" rows="1" placeholder="Phone...">\n</textarea>\n\n<hr>\n  \n<div class="textarea">\n  <textarea cols="42" rows="1"  placeholder="E-mail..."></textarea>\n</div>\n\n<hr>\n\n<textarea cols="42" rows="5" placeholder="Additional Notes...">\n</textarea>\n\n<hr>\n\n<div class="rent">\n<button ion-button round outline class="button">Submit</button>\n</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\jairo\TestApp\src\pages\contact\contact.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], ContactPage);
+
+//# sourceMappingURL=contact.js.map
+
+/***/ })
+
+},[197]);
+//# sourceMappingURL=main.js.map

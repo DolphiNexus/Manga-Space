@@ -1,11 +1,116 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+<ion-toolbar color="header" class="headershadow">
+<ion-title>
+Manga Space
+</ion-title>
+</ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="everything">
+  <form id="search-form">
+    <div class="search">
+      <input type="text" name="search" class="round" placeholder="Search..."/>
+      <input type="submit" class="corner" value=""/>
+    </div>
+  <ion-list>
 
-</ion-content>
+<ion-scroll scrollY="true" style="height:530px">
+
+    <ion-card>
+
+
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Dragon Ball</h1>
+    </div>
+</div>
+
+    <ion-card color="card">
+    <div id="container">
+    <div class="card">
+
+    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
+  </div>
+  </div>
+  </ion-card>
+
+<br>
+<br>
+
+  <div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Naruto Shippunden</h1>
+    </div>
+</div>
+
+  <ion-card color="card">
+    <div id="container">
+    <div class="card">
+
+    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg"/>
+  </div>
+  </div>
+  </ion-card>
+
+
+
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Attack on Titan</h1>
+    </div>
+</div>
+
+    <ion-card  color="card">
+
+    <div id="container">
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+  </div>
+
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>Other Manga</h1>
+    </div>
+</div>
+
+    <ion-card  color="card">
+
+    <div id="container">
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
+  </div>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
