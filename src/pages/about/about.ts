@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { RentPage } from '../rent/rent';
 import { ContactPage } from '../contact/contact';
+import { ThankYouPage } from '../thank-you/thank-you';
 
 @Component({
   selector: 'page-about',
@@ -20,6 +21,9 @@ export class AboutPage {
   }
   goToContact(){
     this.navCtrl.push(ContactPage);
+  }
+  goToThank(){
+    this.navCtrl.push(ThankYouPage);
 }
 
 

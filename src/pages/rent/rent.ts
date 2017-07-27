@@ -17,6 +17,7 @@ export class RentPage {
 	list : Observable<any>;
 
   constructor(public navCtrl: NavController, public dataService: DataServiceProvider) {
+
   	this.loadTodos();
   }
 
