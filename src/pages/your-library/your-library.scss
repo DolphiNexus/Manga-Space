@@ -3,7 +3,6 @@ page-about {
 }
 
 #containerbox {
-    width: 120px;
     height: 200px;
     display: inline-block;
     color: white;
@@ -50,25 +49,26 @@ h1 {
     z-index: 1;
     overflow: hidden;
     text-align: center;
-    color: #1A679D;
 }
 h1:before, h1:after {
     position: absolute;
     top: 51%;
     overflow: hidden;
     width: 48%;
-    height: 1px;
+    height: 2px;
     content: '\a0';
     background-color: #1A679D;
 }
 h1:before {
     margin-left: -50%;
     text-align: right;
+    color: #1A679D;
 }
 
 h1:after {
     margin-left: 3%;
     text-align: right;
+    color: #1A679D;
 }
 .color {
     background-color: #ccc;
@@ -80,7 +80,7 @@ element.style {
 	}
 }
 .card-md h1{
-    color: white;
+    color: #1A679D;
 }
 
 .contentsub {

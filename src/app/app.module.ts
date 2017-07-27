@@ -36,7 +36,6 @@ import { HttpModule } from "@angular/http"
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-    IonicModule.forRoot(MyApp,{tabsPlacement: 'top'}),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

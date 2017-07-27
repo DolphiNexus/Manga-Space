@@ -16,6 +16,10 @@ element.style {
     background-color: #1A679D;
 }
 
+ion-app.md {
+    font-family: 'Anton', sans-serif;
+}
+
 h3 {
     margin-left: 90px;
 }
@@ -28,7 +32,6 @@ h1 {
     z-index: 1;
     overflow: hidden;
     text-align: center;
-    background-color: #1A679D;
 }
 h1:before, h1:after {
     position: absolute;
@@ -74,6 +77,11 @@ element.style {
 }
 .card-md h1{
     color: white;
+}
+
+card-md {
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .round {
@@ -134,5 +142,17 @@ img {
     text-align: center;
 }
 
+.imgsearch {
+margin: auto 5px;
+    float: right;
+    width: 35px;
+    height: 35px;
+}
 
+.imgcontact {
+margin: auto 5px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
 
