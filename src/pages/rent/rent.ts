@@ -36,6 +36,9 @@ export class RentPage {
 	private showToast (message: string) {
 
 	}
+	sendInfo() {
+		console.log("lol will send data here")
+	}
 
 }
 
