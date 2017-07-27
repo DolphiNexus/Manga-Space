@@ -15,9 +15,9 @@ export class DataServiceProvider {
   	return this.http.get(this.apiURL + 'pullEvents')
   	.map(response => response.json());
   }
-  public addTodos() {
-  	//return this.http.post(this.apiURL + 'todos', {'text': newTodo})
-  	//.map(response => response.json());
+  public pushRentDetails() {
+  	return this.http.post(this.apiURL + 'pushRentDetails', {'text': "test data fam"})
+  	.map(response => response.json());
   }
     public deleteTodos() {
   	//return this.http.delete(this.apiURL + 'todos/' + todoId)
