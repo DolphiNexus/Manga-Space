@@ -1,51 +1,49 @@
 <head>
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 
 <ion-tabs>
-    <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>
 </ion-tabs>
 
 <ion-header>
-<ion-toolbar color="header" class="headershadow">
-<ion-title>
-Dragon Ball Z
-</ion-title>
-<img class="imgcontact" src="assets/User Icon.png">
-</ion-toolbar>
+  <ion-toolbar color="header" class="headershadow">
+    <ion-title>
+      Dragon Ball Z
+    </ion-title>
+    <img class="imgcontact" src="assets/User Icon.png">
+  </ion-toolbar>
 </ion-header>
 
 <ion-content class="everything">
-<ion-list>
-<ion-item *ngFor="let item of list | async">
-	{{item.name}}
-</ion-item>
-	
-</ion-list>
+  <ion-list>
+    <ion-item *ngFor="let item of list | async">
+      {{item.bookName}}
+      {{item.Cost}}
+    </ion-item>
 
+  </ion-list>
 
+  <img src="assets/DBZ8.jpg" alt="Manga Cover Pic" align="middle">
 
-<img src="assets/DBZ8.jpg" alt="Manga Cover Pic"  align="middle">
+  <hr>
 
-<hr>
-
-<textarea cols="38" rows="8" placeholder="Description of the book...">
+  <textarea cols="38" rows="8" placeholder="Description of the book...">
 </textarea>
 
-<hr>
-<hr>
+  <hr>
+  <hr>
 
-<textarea cols="38" rows="2" placeholder="Description of the book...">
+  <textarea cols="38" rows="2" placeholder="Description of the book...">
 </textarea>
-  
-<div class="textarea">
-  <textarea cols="38" rows="5" placeholder="Description of the book..."></textarea>
-</div>
 
-<hr>
+  <div class="textarea">
+    <textarea cols="38" rows="5" placeholder="Description of the book..."></textarea>
+  </div>
 
-<div class="rent">
-<button ion-button round outline class="button" (click)='goToThank()'>Rent</button>
-</div>
+  <hr>
+
+  <div class="rent">
+    <button ion-button round outline class="button" (click)='goToThank()'>Rent</button>
+  </div>
 </ion-content>
-

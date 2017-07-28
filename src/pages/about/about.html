@@ -1,96 +1,103 @@
 <head>
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 
 <ion-header>
-<ion-toolbar color="header" class="headershadow">
-<ion-title>
-BROWSE
-</ion-title>
-<img class="imgsearch" src="assets/SearchIcon.png">
-</ion-toolbar>
+    <ion-navbar color="header" class="headershadow">
+        <ion-title>
+            BROWSE
+        </ion-title>
+        <img class="imgsearch" src="assets/SearchIcon.png">
+    </ion-navbar>
 </ion-header>
 
 <ion-content class="everything">
 
-<ion-scroll scrollY="true" style="height:100%">
+    <ion-scroll scrollY="true" style="height:100%">
 
-    <ion-card>
+        <ion-card>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <h1>TRENDING SERIES</h1>
+                    </div>
+                </div>
 
+                <ion-card color="card">
+                    <div id="container">
+                        <div class="card">
 
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>DRAGON BALL</h1>
-    </div>
-</div>
+                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                        </div>
+                    </div>
+                </ion-card>
 
-    <ion-card color="card">
-    <div id="container">
-    <div class="card">
+                <br>
+                <br>
 
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-  </div>
-  </div>
-  </ion-card>
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <h1>NARUTO SHIPPUNDEN</h1>
+                        </div>
+                    </div>
 
-<br>
-<br>
+                    <ion-card color="card">
+                        <div id="container">
+                            <div class="card">
 
-  <div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>NARUTO SHIPPUNDEN</h1>
-    </div>
-</div>
-
-  <ion-card color="card">
-    <div id="container">
-    <div class="card">
-
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg"/>
-  </div>
-  </div>
-  </ion-card>
+                                <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+                                <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+                                <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+                                <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+                            </div>
+                        </div>
+                    </ion-card>
 
 
 
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>ATTACK ON TITAN</h1>
-    </div>
-</div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center">
+                                <h1>ATTACK ON TITAN</h1>
+                            </div>
+                        </div>
 
-    <ion-card  color="card">
+                        <ion-card color="card">
 
-    <div id="container">
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-  </div>
+                            <div id="container">
+                                <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                            </div>
 
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>OTHER MANGA</h1>
-    </div>
-</div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text-center">
+                                        <h1>OTHER MANGA</h1>
+                                    </div>
+                                </div>
 
-    <ion-card  color="card">
+                                <ion-card color="card">
 
-    <div id="container">
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-  </div>
+                                    <div id="container">
+                                        <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                        <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                        <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                        <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                        <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg" />
+                                    </div>
+                                </ion-card>
+                            </div>
+                        </ion-card>
+                    </div>
+                </div>
+            </div>
+        </ion-card>
+    </ion-scroll>
+</ion-content>
