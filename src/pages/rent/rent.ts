@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { NavController } from 'ionic-angular';
 
 import { DataServiceProvider } from "../../providers/data-service/data-service";
+import { ThankYouPage } from "../thank-you/thank-you";
 /**
  * Generated class for the RentPage tabs.
  *
@@ -50,7 +51,7 @@ export class RentPage {
 		this.dataService.sendOrderToDB(this.orderObj);
 		
 		//push next page
-		//this.navCtrl.(ThankYouPage, {})
+		this.navCtrl.push(ThankYouPage, {});
 
 		
 	}

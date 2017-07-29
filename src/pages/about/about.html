@@ -2,26 +2,26 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 
-<ion-header>
-    <ion-navbar color="header" class="headershadow">
-        <ion-title>
-            BROWSE
-        </ion-title>
-        <img class="imgsearch" src="assets/SearchIcon.png">
-    </ion-navbar>
-</ion-header>
 
 <ion-content class="everything">
+<ion-scroll scrollY="true" style="height:100%">
 
-    <ion-scroll scrollY="true" style="height:100%">
+    <form id="search-form">
+    <div class="search">
+      <input type="text" name="search" class="round" />
+      <input type="submit" class="corner" value="" />
+    </div>
+</form>
+<img class="imgstart" src="assets/HomeStart.png" />
+<img class="thebar" src="assets/thebar.png" />
 
         <ion-card>
-            <div class="row">
-                <div class="col">
-                    <div class="text-center">
-                        <h1>TRENDING SERIES</h1>
-                    </div>
-                </div>
+<div class="row">
+    <div class="col">
+        <div class="text-center"> 
+            <h1>TRENDING SERIES</h1>
+    </div>
+</div>
 
                 <ion-card color="card">
                     <div id="container">

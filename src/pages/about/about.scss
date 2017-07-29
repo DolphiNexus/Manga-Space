@@ -64,7 +64,7 @@ ion-title {
 
 .headershadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    color: #1A3746
+    color: #1A3746;
 }
 
 .color {
@@ -96,8 +96,8 @@ card-md {
     position: absolute;
     top: 0;
     z-index: 5;
-    background-color: #1180C9;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .corner {
@@ -109,17 +109,17 @@ card-md {
     z-index: 10;
     border-radius: 10px;
     border: none;
-    background: #000;
+    background: white;
     background-image: url("assets/Search Icon.png");
      /* Set the bg image here. with "no-repeat" */
 }
 
 .search {
     position: relative;
-    top: 15px;
-    left: 30px;
-    width: 250px;
-    height: 40px;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    bottom: 30px;
 }
 
 .card2 {
@@ -165,3 +165,17 @@ margin: auto 5px;
   color: #424242;
 }
 
+.imgstart {
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%; 
+    width: 100%;
+    height: auto;
+}
+
+.thebar {
+    position: relative;
+    top: -20px;
+    left: 0%;
+    width: 40%;
+}
