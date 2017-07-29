@@ -18,8 +18,7 @@
 <ion-content class="everything">
   <ion-list>
     <ion-item *ngFor="let item of list | async">
-      {{item.bookName}}
-      {{item.Cost}}
+      {{item.Name}} {{item.Price}}
     </ion-item>
 
   </ion-list>
@@ -28,22 +27,22 @@
 
   <hr>
 
-  <textarea cols="38" rows="8" placeholder="Description of the book...">
+  <textarea [(ngModel)]="orderObj.Name" cols="38" rows="8" placeholder="Description of the book...">
 </textarea>
 
   <hr>
   <hr>
 
-  <textarea cols="38" rows="2" placeholder="Description of the book...">
+  <textarea cols="38" rows="2"[(ngModel)]="orderObj.Description" placeholder="Description of the book...">
 </textarea>
 
   <div class="textarea">
-    <textarea cols="38" rows="5" placeholder="Description of the book..."></textarea>
+    <textarea cols="38" rows="5" [(ngModel)]="orderObj.Price"placeholder="Description of the book..."></textarea>
   </div>
 
   <hr>
 
   <div class="rent">
-    <button ion-button round outline class="button" (click)='goToThank()'>Rent</button>
+    <button ion-button round outline class="button" (click)='sendOrder()'>Rent</button>
   </div>
 </ion-content>

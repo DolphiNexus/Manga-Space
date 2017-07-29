@@ -15,6 +15,11 @@ import { DataServiceProvider } from "../../providers/data-service/data-service";
 })
 export class RentPage {
 	list : Observable<any>;
+	orderObj = {
+		Name: "",
+		Description: "",
+		Price: "",
+	}
 
   constructor(public navCtrl: NavController, public dataService: DataServiceProvider) {
 
@@ -36,8 +41,18 @@ export class RentPage {
 	private showToast (message: string) {
 
 	}
-	sendInfo() {
+	sendOrder() {
+		// get order object containing data
 		console.log("lol will send data here")
+		console.log(this.orderObj);
+		
+		//push object to the server
+		this.dataService.sendOrderToDB(this.orderObj);
+		
+		//push next page
+		//this.navCtrl.(ThankYouPage, {})
+
+		
 	}
 
 }

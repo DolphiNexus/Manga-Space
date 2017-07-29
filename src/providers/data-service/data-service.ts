@@ -12,12 +12,13 @@ export class DataServiceProvider {
   }
 
   public getData() {
-  	return this.http.get(this.apiURL + 'pullEvents')
+  	return this.http.get(this.apiURL + 'pullOrders')
   	.map(response => response.json());
   }
-  public pushRentDetails() {
-  	return this.http.post(this.apiURL + 'pushRentDetails', {'text': "test data fam"})
-  	.map(response => response.json());
+  public sendOrderToDB(obj) {
+  	return this.http.post(this.apiURL + 'pushOrder', obj)
+    .map(response => response.json())
+    .subscribe();
   }
     public deleteTodos() {
   	//return this.http.delete(this.apiURL + 'todos/' + todoId)
