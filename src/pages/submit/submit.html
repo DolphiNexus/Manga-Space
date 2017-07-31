@@ -1,0 +1,49 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<ion-tabs>
+  <ion-tab [root]="rentABookRoot" tabTitle="Rent a book" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
+
+<ion-header>
+  <ion-toolbar color="header" class="headershadow">
+    <ion-title>
+      Dragon Ball Z
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="everything">
+
+  <img src="assets/DBZ8.jpg" alt="Manga Cover Pic" align="middle">
+
+<div class="divcolor">
+<h3 class="whitetext2">Naruto: The Nine Tales</h3>
+  <br>
+    <ion-item class="style">
+    <ion-label class="label"><h2 class="label2">Condition</h2></ion-label>
+    <ion-input class="label2" type="tel" placeholder="New Book"></ion-input>
+  </ion-item>
+
+  <ion-item class="style">
+    <ion-label class="label"><h2 class="label2">E-mail</h2></ion-label>
+    <ion-input class="label2" type="tel" placeholder="bob1234@gmail.com"></ion-input>
+  </ion-item>
+
+  <ion-item class="style">
+    <ion-label class="label"><h2 class="label2">Phone Number</h2></ion-label>
+    <ion-input class="label2" type="tel" placeholder="(123)456-7891"></ion-input>
+  </ion-item>
+
+  <ion-item class="style">
+    <ion-label class="label"><h2 class="label2">Payment</h2></ion-label>
+    <ion-input class="label2" type="tel" placeholder="$20 per month"></ion-input>
+  </ion-item>
+
+  <div class="rent">
+    <button ion-button round outline class="button" (click)='goToHome()'>SUBMIT</button>
+  </div>
+</div>
+</ion-content>
+
