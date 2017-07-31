@@ -1,5 +1,6 @@
 page-home {
-
+  .background {
+    background-color: lightgray;
   }
 
   .scroll-control {
@@ -37,27 +38,27 @@ page-home {
 }
 
 .text-input, {
-  color: #fff;
+  color: black;
 }
 
 input::-moz-placeholder, {
-  color: #fff!important;
+  color: black!important;
 }
 
 input:-eoz-placeholder {
-  color: #fff!important;
+  color: black!important;
 }
 
 *::-webkit-input-placeholder, {
-  color: #fff!important;
+  color: black!important;
 }
 
 *:-es-input-placeholder, {
-  color: #fff!important;
+  color: black!important;
 }
 
 *:-moz-placeholder, {
-  color: #fff!important;
+  color: black!important;
 }
 
 .icon {

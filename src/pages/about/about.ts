@@ -1,6 +1,7 @@
  import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { SearchPage } from '../search/search';
 import { RentPage } from '../rent/rent';
 import { ContactPage } from '../contact/contact';
 
@@ -21,7 +22,9 @@ export class AboutPage {
   goToContact(){
     this.navCtrl.push(ContactPage);
   }
-
+  goToSearch(){
+    this.navCtrl.push(SearchPage);
+  }
 
 
 
