@@ -5,92 +5,48 @@
 <ion-header>
 <ion-toolbar color="header" class="headershadow">
 <ion-title>
-RENT
+YOUR PROFILE
 </ion-title>
-<img class="imgsearch" src="assets/SearchIcon.png">
 </ion-toolbar>
 </ion-header>
 
-<ion-content class="everything">
+
 
 <ion-scroll scrollY="true" style="height:100%">
 
-    <ion-card>
-
-
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>DRAGON BALL</h1>
-    </div>
+<div class="clearfix float-my-children">
+   <img src="../assets/UserIcon.png" width=100>
+   <div>Name of User</div>
 </div>
 
-    <ion-card color="card">
-    <div id="container">
-    <div class="card">
+<ion-list>
+  <ion-item>
+    <ion-label class="label">Email</ion-label>
+    <ion-input class="rentinput" placeholder="Your Email"></ion-input>
+  </ion-item>
 
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/DBZ8.jpg" />
-  </div>
-  </div>
-  </ion-card>
+<ion-list>
+  <ion-item>
+    <ion-label color="primary">Password</ion-label>
+    <ion-input placeholder="Your Password"></ion-input>
+  </ion-item>
 
-<br>
-<br>
+<ion-list>
+  <ion-item>
+    <ion-label color="primary">Payment Methods</ion-label>
+    <ion-input placeholder="Debit Card"></ion-input>
+  </ion-item>
 
-  <div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>NARUTO SHIPPUNDEN</h1>
-    </div>
-</div>
+<ion-list>
+  <ion-item>
+    <ion-label color="primary">Address</ion-label>
+    <ion-input placeholder="123 LA St."></ion-input>
+  </ion-item>
 
-  <ion-card color="card">
-    <div id="container">
-    <div class="card">
+<ion-list>
+  <ion-item>
+    <ion-label color="primary">Your Interests</ion-label>
+    <ion-input placeholder="Interests"></ion-input>
+  </ion-item>
+    
 
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-    <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg"/>
-  </div>
-  </div>
-  </ion-card>
-
-
-
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>ATTACK ON TITAN</h1>
-    </div>
-</div>
-
-    <ion-card  color="card">
-
-    <div id="container">
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-  </div>
-
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>OTHER MANGA</h1>
-    </div>
-</div>
-
-    <ion-card  color="card">
-
-    <div id="container">
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-    <img class="contents" (click)='goToContact()' src="assets/AttackonTitan10.jpg"/>
-  </div>

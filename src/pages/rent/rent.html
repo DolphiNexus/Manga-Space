@@ -11,27 +11,44 @@
     <ion-title>
       Dragon Ball Z
     </ion-title>
-    <img class="imgcontact" src="assets/User Icon.png">
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="everything">
-  <ion-list>
-    <ion-item *ngFor="let item of list | async">
-      {{item.Name}} {{item.Price}}
-    </ion-item>
-
-  </ion-list>
 
   <img src="assets/DBZ8.jpg" alt="Manga Cover Pic" align="middle">
 
+<div class="divcolor">
   <hr>
 
-  <textarea [(ngModel)]="orderObj.Name" cols="38" rows="8" placeholder="Description of the book...">
+<h3 class="whitetext">Naruto: The Nine Tales</h3>
+
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+
+<br>
+
+<img class="img-circle2" src="" />
+<img class="img-circle2" src="" />
+
+<hr>
+
+<img class="sideimg" src="" />
+
+  <textarea [(ngModel)]="orderObj.Name" cols="38" rows="8" placeholder="More Info On Seller">
 </textarea>
 
-  <hr>
-  <hr>
+
 
   <textarea cols="38" rows="2"[(ngModel)]="orderObj.Description" placeholder="Description of the book...">
 </textarea>
@@ -40,9 +57,10 @@
     <textarea cols="38" rows="5" [(ngModel)]="orderObj.Price"placeholder="Description of the book..."></textarea>
   </div>
 
-  <hr>
+<br>
 
   <div class="rent">
-    <button ion-button round outline class="button" (click)='sendOrder()'>Rent</button>
+    <button ion-button round outline class="button" (click)='sendOrder()'>RENT BOOK</button>
   </div>
+</div>
 </ion-content>

@@ -19,7 +19,7 @@
 .ion-md-customicon {
   content: url(../assets/Books.png);
   width: 50px;
-  height: 32px;
+  height: 40px;
   padding: 6px 8px 2px;
   opacity: 0.9;
 }
@@ -27,6 +27,15 @@
 .ion-customicon,
 .ion-md-customicon2 {
   content: url(../assets/Home.png);
+  width: 40px;
+  height: 32px;
+  padding: 6px 8px 2px;
+  opacity: 0.9;
+}
+
+.ion-customicon,
+.ion-md-customicon3 {
+  content: url(../assets/UserIcon.png);
   width: 40px;
   height: 32px;
   padding: 6px 8px 2px;

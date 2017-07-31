@@ -1,3 +1,35 @@
 page-renting {
 
 }
+
+.contactimg {
+    border: 6px solid black;
+}
+
+.float-my-children > * {
+    float:left;
+    margin-right: 5px;
+    margin-top: 20%;
+}
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.label {
+    color: black;
+}
+
+.rentinput {
+    background: white;
+}
