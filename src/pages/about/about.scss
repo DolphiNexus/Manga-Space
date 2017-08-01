@@ -88,12 +88,12 @@ card-md {
 }
 
 .round {
-    margin-top: 20%;
+    margin-top: 15%;
     width: 90%;
     left: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
-    border: 1px transparent solid;
+    border: 1px black solid;
     padding: 5px 5px 5px 15px;
     position: absolute;
     top: 0;
@@ -183,7 +183,9 @@ margin: auto 5px;
     margin-bottom: 0%;
 }
 
-.thebar {
-    margin-top: -24%;
-    border: 0px;
+.better {
+    color:#1A679D;
+    margin-bottom: -15%;
+    margin-left: 27%;
 }
+

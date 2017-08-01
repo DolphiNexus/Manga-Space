@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { NavController } from 'ionic-angular';
 
 import { DataServiceProvider } from "../../providers/data-service/data-service";
-import { ThankYouPage } from "../thank-you/thank-you";
+import { AboutPage } from '../about/about';
 /**
  * Generated class for the RentPage tabs.
  *
@@ -48,16 +48,14 @@ export class RentPage {
 		console.log(this.orderObj);
 		
 		//push object to the server
-		this.dataService.sendOrderToDB(this.orderObj);
-		
-		//push next page
-		this.navCtrl.push(ThankYouPage, {});
+		this.dataService.sendOrderToDB(this.orderObj);	
 
-		
+		//push to next page
+		this.navCtrl.push(AboutPage, {});
+ 
+	
 	}
 
 }
-
-
 
   
