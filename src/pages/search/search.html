@@ -1,7 +1,7 @@
 <ion-content class="style">
 <ion-scroll scrollY="true" style="height:100%">
 
-<img class="exit" src="assets/Exit.png" />
+<img class="exit" (click)='goToAbout()' src="assets/Exit.png" />
 <form id="search-form">
     <div class="search">
       <input type="text" name="search" class="round" />
@@ -9,5 +9,5 @@
     </div>
 </form>
 
-<img class="searchpage" src="assets/SearchIcon.png" />
+<img class="searchpage" src="assets/CoolerSearch.png" />
 <p class="words">Try searching for a title or a series!</p>
