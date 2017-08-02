@@ -225,7 +225,7 @@ fieldset, label { margin: 0; padding: 0; }
 }
 
 .rating > label:active {
-    position:relative;
+    position: relative;
     top:2px;
     left:2px;
 }
@@ -241,8 +241,8 @@ fieldset, label { margin: 0; padding: 0; }
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
-  margin-left: 20px;
-  margin-top: -15%;
+ 
+  
 }
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
@@ -352,6 +352,11 @@ fieldset, label { margin: 0; padding: 0; }
     top:2px;
     left:2px;
 }
+
+.rating-block{
+  display: block;
+  
+}
   
 
 
@@ -383,4 +388,11 @@ fieldset, label { margin: 0; padding: 0; }
    content: "\2605";
    position: absolute;
    color: yellow;
+}
+
+.summary {
+  color:white;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 50px;
 }

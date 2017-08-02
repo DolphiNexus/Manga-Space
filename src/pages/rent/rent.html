@@ -9,76 +9,59 @@
 <ion-header>
   <ion-toolbar color="header" class="headershadow">
     <ion-title>
-      Dragon Ball Z
+      Naruto Shippunden
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="everything">
 
-  <img src="assets/DBZ8.jpg" alt="Manga Cover Pic" align="middle">
+  <img src="assets/NarutoManga.jpg" alt="Manga Cover Pic" align="middle" />
 
-<div class="divcolor">
-  <hr>
+  <div class="divcolor">
+    <hr>
 
-<h3 class="whitetext">Naruto: The Nine Tales</h3>
+    <h3 class="whitetext">Naruto: The Nine Tales</h3>
 
-<div class="boxed">
-  <p class="price">$8</p><br>
-  <p class="price2">per month</p>
-</div>
-
-<br>
-
-<fieldset class="rating">
-    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time"></label>
-</fieldset>
-
-<br>
-
-<img class="img-circle2" src="assets/Book2.png" />
-<p class="circletext">New Book</p>
-<img class="img-circle2" src="assets/Calendar.png" />
-<p class="circletext2">Sun, Jul 30, 2017<br>
-   Sun, Aug 30, 2017</p>
+    <div class="boxed">
+      <p class="price">$8</p><br>
+      <p class="price2">per month</p>
+    </div>
 
 
-<hr>
+    <p class="summary">As Kushina tells Naruto that she loves him, he becomes calm and filled with happiness. Spurned by his mother to defeat
+      the tailed beast, he forms a pair of shadow clones to form a Rasengan. On the outside, Yamato is shocked as Naruto's
+      transformation completely subsides while Killer B remarks that Naruto is succeeding. (source: Naruto Wikia)</p>
+    <div class="rating-block">
+      <fieldset class="rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad"></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time"></label>
+    </fieldset>
+    </div>
+    <br>
 
-<img class="user2" src="../assets/dude2.png" />
-<p class="usertext2">Simon Drumsticks</p>
-
-<fieldset class="rating2">
-    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time"></label>
-</fieldset>
-<br>
-<br>
-<br>
-
-  <textarea [(ngModel)]="orderObj.Name" cols="38" rows="8" placeholder="More Info On Seller">
-</textarea>
+    <img class="img-circle2" src="assets/Book2.png" />
+    <p class="circletext">New Book</p>
+    <img class="img-circle2" src="assets/Calendar.png" />
+    <p class="circletext2">Sun, Jul 30, 2017<br> Sun, Aug 30, 2017</p>
 
 
+    <hr>
 
-  <textarea cols="38" rows="2"[(ngModel)]="orderObj.Description" placeholder="Description of the book...">
-</textarea>
+    <img class="user2" src="/assets/dude2.png" />
+    <p class="usertext2">Jairo Mendoza</p>
 
-  <div class="textarea">
-    <textarea cols="38" rows="5" [(ngModel)]="orderObj.Price"placeholder="Description of the book..."></textarea>
+    <br>
+    <br>
+    <br>
+
+    <br>
+
+    <div class="rent">
+      <button ion-button round outline class="button" (click)='presentConfirm()'>RENT BOOK</button>
+    </div>
   </div>
-
-<br>
-
-  <div class="rent">
-    <button ion-button round outline class="button" (click)='sendOrder()'>RENT BOOK</button>
-  </div>
-</div>
 </ion-content>

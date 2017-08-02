@@ -3,110 +3,109 @@
 </head>
 
 <ion-header>
-  <ion-toolbar color="header" class="headershadow">
-    <ion-title>
-      MANGA SPACE
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="header" class="headershadow">
+        <ion-title>
+            MANGA SPACE 
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content class="everything">
-<ion-scroll scrollY="true" style="height:100%">
+<ion-content class="everything"  >
+    <ion-scroll scrollY="true" style="height:100%" >
 
-<h3 class="better">Rent better books</h3>
+        <h3 class="better">Rent better books</h3>
 
-    <form id="search-form">
-    <div class="search">
-      <input type="text" name="search" (click)='goToSearch()' class="round" />
-      <input type="submit" class="corner" value="" />
-    </div>
-</form>
-<br>
+        <form id="search-form">
+            <div class="search">
+                <input type="text" name="search" (click)='goToSearch()' class="round" />
+                <input type="submit" class="corner" value="" />
+            </div>
+        </form>
+        <br>
 
-        <ion-card>
-<div class="row">
-    <div class="col">
-        <div class="text-center"> 
-            <h1>TRENDING SERIES</h1>
-    </div>
-</div>
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <h1>TRENDING SERIES</h1>
+                </div>
+            </div>
+
+
+            <div id="container" class="home-padding">
+                <div class="card">
+                    <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                    <img class="img-circle" (click)='goToRent()' src="assets/Naruto.jpg" />
+                    <img class="img-circle" (click)='goToRent()' src="assets/AOT1.jpg" />
+                    <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <div class="styletop">
+                    <div class="text-center">
+                        <h1>NARUTO SHIPPUNDEN</h1>
+                    </div>
+                    </div>
+                </div>
 
                 <ion-card color="card">
                     <div id="container">
                         <div class="card">
 
-                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
-                            <img class="img-circle" (click)='goToRent()' src="assets/Naruto.jpg" />
-                            <img class="img-circle" (click)='goToRent()' src="assets/AOT1.jpg" />
-                            <img class="img-circle" (click)='goToRent()' src="assets/DBZ8.jpg" />
+                            <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
+                            <img class="contents" (click)='goToRent()' src="assets/Naruto.jpg" />
+                            <img class="contents" (click)='goToRent()' src="assets/NarutoHokage.jpg" />
+                            <img class="contents" (click)='goToRent()' src="assets/Naruto63.jpg" />
                         </div>
                     </div>
                 </ion-card>
 
-                <br>
-                <br>
+
 
                 <div class="row">
                     <div class="col">
                         <div class="text-center">
-                            <h1>NARUTO SHIPPUNDEN</h1>
+                            <h1>ATTACK ON TITAN</h1>
                         </div>
                     </div>
 
                     <ion-card color="card">
+
                         <div id="container">
-                            <div class="card">
-
-                                <img class="contents" (click)='goToRent()' src="assets/NarutoManga.jpg" />
-                                <img class="contents" (click)='goToRent()' src="assets/Naruto.jpg" />
-                                <img class="contents" (click)='goToRent()' src="assets/NarutoHokage.jpg" />
-                                <img class="contents" (click)='goToRent()' src="assets/Naruto63.jpg" />
-                            </div>
-                        </div>
-                    </ion-card>
-
-
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="text-center">
-                                <h1>ATTACK ON TITAN</h1>
-                            </div>
+                            <img class="contents" src="assets/AOT1.jpg" />
+                            <img class="contents" src="assets/AttackonTitan10.jpg" />
+                            <img class="contents" src="assets/AttackonTitan10.jpg" />
+                            <img class="contents" src="assets/AttackonTitan10.jpg" />
+                            <img class="contents" src="assets/AttackonTitan10.jpg" />
                         </div>
 
-                        <ion-card color="card">
-
-                            <div id="container">
-                                <img class="contents" src="assets/AOT1.jpg" />
-                                <img class="contents" src="assets/AttackonTitan10.jpg" />
-                                <img class="contents" src="assets/AttackonTitan10.jpg" />
-                                <img class="contents" src="assets/AttackonTitan10.jpg" />
-                                <img class="contents" src="assets/AttackonTitan10.jpg" />
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <h1>OTHER MANGA</h1>
+                                </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col">
-                                    <div class="text-center">
-                                        <h1>OTHER MANGA</h1>
-                                    </div>
+                            <ion-card color="card">
+
+                                <div id="container">
+                                    <img class="contents" src="assets/AttackonTitan10.jpg" />
+                                    <img class="contents" src="assets/OP.png" />
+                                    <img class="contents" src="assets/OPM1.png" />
+                                    <img class="contents" src="assets/Poke.png" />
+                                    <img class="contents" src="assets/Tokyo.jpg" />
                                 </div>
 
-                        <ion-card color="card">
-
-                            <div id="container">
-                                <img class="contents" src="assets/AttackonTitan10.jpg" />
-                                <img class="contents" src="assets/OP.png" />
-                                <img class="contents" src="assets/OPM1.png" />
-                                <img class="contents" src="assets/Poke.png" />
-                                <img class="contents" src="assets/Tokyo.jpg" />
-                            </div>
-
-                                </ion-card>
-                            </div>
-                        </ion-card>
-                    </div>
+                            </ion-card>
+                        </div>
+                    </ion-card>
                 </div>
             </div>
-        </ion-card>
+        </div>
     </ion-scroll>
 </ion-content>

@@ -32,6 +32,7 @@ h1 {
     z-index: 1;
     overflow: hidden;
     text-align: center;
+    color: #1A679D;
 }
 h1:before, h1:after {
     position: absolute;
@@ -184,3 +185,12 @@ margin: auto 5px;
     margin-left: 27%;
 }
 
+.home-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.styletop {
+    margin-top: -50px;
+}
